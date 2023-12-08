@@ -1,0 +1,26 @@
+Doctor Features:
+- Patient Profile Management and Medical Records
+- Schedule and Appointments
+- Diagnostic and Treatment Management
+- Report Page
+ 
+ 
+ 
+Available Schedule:  
+-available appointment slots.
+-view the schedule.
+-display real-time information to avoid double-bookings and provide an accurate representation of available slots.
+Staff Features:
+- Appointment Management
+- Waiting Lists
+- Patient Registration
+- Check-In and Check-Out
+- Billing and Payments
+Patient Features:
+-Name
+-Cell phone
+-Patient Registration
+-Treatment Records
+Material features:
+- Cost
+-Ordering and Restocking

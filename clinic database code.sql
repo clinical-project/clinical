@@ -20,13 +20,13 @@ CREATE TABLE IF NOT EXISTS PATIENT (
 CREATE TABLE IF NOT EXISTS DOCTOR (
     doctorID INT AUTO_INCREMENT PRIMARY KEY,
     doctorName VARCHAR(255),
-    doctorNationalID VARCHAR(20), -- Change data type and adjust length
+    doctorNationalID VARCHAR(20), 
     email VARCHAR(255),
     discount FLOAT,
     password VARCHAR(255),
-    sessionPrice FLOAT, -- Add this column
-    phoneNumber VARCHAR(20), -- Change to VARCHAR and adjust length
-    gender VARCHAR(10) -- Change to VARCHAR and adjust length
+    sessionPrice FLOAT,
+    phoneNumber VARCHAR(20), 
+    gender VARCHAR(10) 
 );
 
 CREATE TABLE IF NOT EXISTS MATERIAL (
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS MATERIAL (
 );
 
 CREATE TABLE IF NOT EXISTS AVAILABLE_TIME (
-    availableTimeID INT AUTO_INCREMENT PRIMARY KEY, -- Add primary key
+    availableTimeID INT AUTO_INCREMENT PRIMARY KEY, 
     doctorID INT,
     date DATE,
     time VARCHAR(50),
@@ -52,8 +52,8 @@ CREATE TABLE IF NOT EXISTS PRESCRIPTION (
     prescriptionID INT AUTO_INCREMENT PRIMARY KEY,
     patientID INT,
     doctorID INT,
-    itemDescription VARCHAR(255), -- Use a more general column
-    itemType ENUM('Medicine', 'Test'), -- Add type column
+    itemDescription VARCHAR(255), 
+    itemType ENUM('Medicine', 'Test'), 
     FOREIGN KEY (patientID) REFERENCES PATIENT(patientID),
     FOREIGN KEY (doctorID) REFERENCES DOCTOR(doctorID)
 );
